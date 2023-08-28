@@ -1,0 +1,5 @@
+1. CSS - Cascading style Sheets
+2. Where to write CSS code
+-> In the Html file
+-> Out the html file 
+
