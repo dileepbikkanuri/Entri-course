@@ -1,0 +1,19 @@
+1.descedant selector
+div h1{
+    prop: val;
+}
+
+2.child selector
+    div>p{
+        prop: val;
+    }
+
+3.adjacent sibling selector
+P+h1{
+    prop:val;
+}
+
+4.general sibling selectors
+p-h1{
+    prop:val;
+}
