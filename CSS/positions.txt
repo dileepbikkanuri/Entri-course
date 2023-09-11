@@ -1,0 +1,12 @@
+Position Propertis -
+p{
+    property:value:
+
+}
+
+Positions-
+1. Static
+2. Relative
+3. Fixed
+4. Absolute
+5. sticky
