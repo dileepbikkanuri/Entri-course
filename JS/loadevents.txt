@@ -1,0 +1,4 @@
+1. onload
+2. onerror
+3. onunload
+4. onresize
