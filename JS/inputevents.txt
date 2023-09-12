@@ -1,0 +1,9 @@
+1. onblur - when a user leaves input field
+2. onchange- 
+3. onfocus
+4. onselect
+5. onsubmit
+6. onreset
+7. onkeydown
+8. onkeypress
+9. onkeyup
