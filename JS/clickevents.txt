@@ -1,0 +1,2 @@
+1. onclick
+2. ondblclick
