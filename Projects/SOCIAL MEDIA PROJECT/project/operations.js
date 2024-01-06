@@ -16,7 +16,7 @@ async function readPosts() {
     }
 }
 
-readPosts().then(result => {
+readPosts().then(result => { 
     console.log(result);
 }).catch(error => {
     console.error("Error:", error);
