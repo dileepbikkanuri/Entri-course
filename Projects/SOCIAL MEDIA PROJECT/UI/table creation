@@ -1,0 +1,25 @@
+
+create table users (
+id integer primary key auto_increment,
+name varchar(50),
+profile varchar(50),
+password varchar(50),
+headline varchar(50),
+token varchar(500)
+);
+
+
+create table posts (
+profile varchar(50),
+content varchar(5000),
+likes integer,
+shares integer
+);
+
+
+insert into users (name, profile, password, headline, token)
+value('BD','Dileep_Bikkanuri', '123@abc', 'Full Stack Developer','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'),('DB','Dinesh_Bikkanuri', '123@abcd', 'Developer','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c');
+
+
+insert into posts (profile, content, likes, shares)
+value('Dileep_Bikkanuri', 'After years of relentless learning and hands-on experience, Alex became a sought-after full-stack developer. They secured a position at a leading tech company, where they continued to innovate and contribute to groundbreaking projects.','3','5'), ('Dinesh_Bikkanuri', 'After years of relentless learning and hands-on experience, Alex became a sought-after full-stack developer. They secured a position at a leading tech company, where they continued to innovate and contribute to groundbreaking projects.','5','3');
