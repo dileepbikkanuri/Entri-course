@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+  /* Custom styles for the cart */
+  .cart-item {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1>Cart</h1>
+  
+  <!-- Cart Items -->
+  <div class="cart-item">
+    <div class="row">
+      <div class="col-3">
+        <img src="https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Item" class="img-fluid">
+      </div>
+      <div class="col-6">
+        <h5>Item Name</h5>
+        <p>Item Description</p>
+      </div>
+      <div class="col-3 text-end">
+        <button class="btn btn-danger" onclick="removeItem(this)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <!-- End of Cart Items -->
+
+  <!-- Add more items to cart -->
+  <div class="mt-4">
+    <a href="#" class="btn btn-primary">Add More Items</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"></script>
+      <script>
+            // Function to remove item from cart
+            function removeItem(buttonElement) {
+              const cartItemElement = buttonElement.closest('.cart-item');
+              cartItemElement.remove();
+            }
+          </script>
+</body>
+</html>
