@@ -58,35 +58,25 @@
     margin-top: 20px;
   }
   
-  /* WeatherApp.css */
-.hourly-forecast {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+ /* WeatherApp.css */
 
-.hourly-forecast h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #333;
-}
+/* ... Your existing styles ... */
+
+/* Update styles for hourly forecast to create a chart view */
 
 .hourly-forecast ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-end; /* Align items to the bottom for the bar chart effect */
 }
 
 .hourly-forecast li {
   margin: 5px;
-  font-size: 1.2em;
+  width: 20px; /* Adjust the width of each bar */
   background-color: #83ceec;
   border-radius: 5px;
-  padding: 10px;
   transition: background-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
@@ -95,3 +85,29 @@
   background-color: #25c4c7;
   transform: scale(1.05);
 }
+
+/* Additional styles for the chart bars */
+.hourly-forecast li::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f0a610;
+  border-radius: 5px;
+  transform-origin: bottom;
+}
+
+/* Add animation for the chart bars */
+@keyframes barGrow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.hourly-forecast li.animate-chart {
+  animation: barGrow 0.5s ease-out;
+}
+

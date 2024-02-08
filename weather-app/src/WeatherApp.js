@@ -88,8 +88,15 @@ const WeatherApp = () => {
           <h2>Hourly Forecast</h2>
           <ul>
             {hourlyForecast.map((hour, index) => (
-              <li key={index}>
-                {new Date(hour.dt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}: {hour.main.temp} °C
+              <li
+                key={index}
+                className="animate-chart"
+                style={{ height: `${hour.main.temp}px` }}
+              >
+                {new Date(hour.dt * 1000).toLocaleTimeString([], {
+                  hour: 'numeric',
+                  minute: '2-digit',
+                })}
               </li>
             ))}
           </ul>
