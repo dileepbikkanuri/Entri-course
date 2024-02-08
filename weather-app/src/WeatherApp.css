@@ -1,0 +1,97 @@
+/* WeatherApp.css */
+.weather-app {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .app-header {
+    font-size: 2em;
+    color: #e81717;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  input {
+    padding: 8px;
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  } 
+  
+  .weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Use a lighter background color */
+    border-radius: 10px; /* Increase border-radius for a smoother appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+
+    /* Gradient background for a modern touch */
+    background: linear-gradient(to right, #73a0c8, #00f2fe);
+    color: #ffffff; /* Set text color to contrast with the background */
+
+    /* Optional: Add a transition for smoother hover effects */
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.weather-info:hover {
+    background: linear-gradient(to right, #45aaf2, #00d4ff);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .loading {
+    margin-top: 20px;
+  }
+  
+  /* WeatherApp.css */
+.hourly-forecast {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hourly-forecast h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hourly-forecast ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hourly-forecast li {
+  margin: 5px;
+  font-size: 1.2em;
+  background-color: #83ceec;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.hourly-forecast li:hover {
+  background-color: #25c4c7;
+  transform: scale(1.05);
+}
